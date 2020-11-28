@@ -56,11 +56,15 @@ public class Main {
 
         int maxValue = array[0];
         int maxIndex = 0;
-        for (int i = 1; i > array.length; i++) {
-            if (array[i] > minValue) {
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > maxValue) {
                 maxValue = array[i];
                 maxIndex = i;
+
             }
+
         }
+        System.out.println("min value" + maxValue);
+        System.out.println("min index" + maxIndex);
     }
 }
